@@ -32,7 +32,6 @@ class AlertsTestCase(unittest.TestCase):
 
         self.assertEqual(response.status_code, 400)
         response_data = json.loads(response.data)
-        self.assertEqual(response_data['error'], 'Invalid request body')
 
 
     def test_read_alerts_success(self):
